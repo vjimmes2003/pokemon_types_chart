@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pokédex Dinámica</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>📘 Pokédex Completa</h1>
+
+  <img src="tabla_tipos_pokemon.png" alt="Tabla de Tipos Pokémon" class="tabla-tipos" />
+
+  <div class="buscador">
+    <input type="text" id="search" placeholder="Busca un Pokémon..." list="suggestions" />
+    <button id="buscar">🔍</button>
+    <datalist id="suggestions"></datalist>
+  </div>
+
+  <div id="result"></div>
+
+  <div class="toggle-container">
+    <button id="mostrarTodos">Mostrar todos</button>
+  </div>
+
+  <div id="pokedex" class="pokedex-grid"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
